@@ -1,6 +1,8 @@
 from torch_geometric.nn import GCNConv
 import torch.nn.functional as F
 import torch.nn as nn
+import torch
+
 
 class BondBreakGNN(nn.Module):
     def __init__(self, node_feat_dim, hidden_dim=64):
