@@ -1,0 +1,6 @@
+flask
+rdkit
+torch
+torch-geometric
+numpy
+pandas
