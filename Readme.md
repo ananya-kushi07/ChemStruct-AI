@@ -71,30 +71,41 @@ ML Component: Predicts the most reactive bond using a trained GNN.
 
 Ensure you have Python ≥3.8 and Node.js ≥18 installed.
 1️⃣ Clone the Repository
+```bash
 git clone <your-repository-url>
 cd chemstruct_ai
+```
 2️⃣ ML Component Setup
 cd chemstruct_ai_ml
 
 # Create and activate virtual environment
+```bash
 python3 -m venv venv_ml
 source venv_ml/bin/activate
-
+ ```
 # Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 # Train the model (creates gnn_bond_predictor.pth in /models)
+```bash
 python src/train.py
-
+```
 # Deactivate after training
+```bash
 deactivate
+```
 ✅ A pre-trained model (gnn_bond_predictor.pth) may already be available in models/.
 3️⃣ Backend Setup
+```bash
 cd ../chemstruct_ai_backend
+```
 
 # Create and activate virtual environment
+```bash
 python3 -m venv venv_backend
 source venv_backend/bin/activate
+
 
 # Install dependencies
 pip install -r requirements.txt
@@ -111,6 +122,7 @@ npm install
 
 # Start the development server
 npm start
+```
 The app will be live at: http://localhost:3000
 Make sure the Flask backend is running first.
 📂 Project Structure
