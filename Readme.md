@@ -72,7 +72,7 @@ ML Component: Predicts the most reactive bond using a trained GNN.
 Ensure you have Python ≥3.8 and Node.js ≥18 installed.
 1️⃣ Clone the Repository
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Vaishakharekere/ChemStruct-AI.git
 cd chemstruct_ai
 ```
 2️⃣ ML Component Setup
