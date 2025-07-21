@@ -62,7 +62,7 @@ graph TD
     D --> C
     C --> B
     B --> E[3D Molecular Visualization & Animation]
-
+```
 
 Frontend: Handles input, displays 3D models, fetches ML predictions.
 Backend: Serves ML predictions and data preprocessing.
