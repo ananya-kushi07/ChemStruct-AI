@@ -62,3 +62,77 @@ graph TD
     D --> C
     C --> B
     B --> E[3D Molecular Visualization & Animation]
+
+
+Frontend: Handles input, displays 3D models, fetches ML predictions.
+Backend: Serves ML predictions and data preprocessing.
+ML Component: Predicts the most reactive bond using a trained GNN.
+🧪 Installation & Local Setup (Mac / Unix)
+
+Ensure you have Python ≥3.8 and Node.js ≥18 installed.
+1️⃣ Clone the Repository
+git clone <your-repository-url>
+cd chemstruct_ai
+2️⃣ ML Component Setup
+cd chemstruct_ai_ml
+
+# Create and activate virtual environment
+python3 -m venv venv_ml
+source venv_ml/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Train the model (creates gnn_bond_predictor.pth in /models)
+python src/train.py
+
+# Deactivate after training
+deactivate
+✅ A pre-trained model (gnn_bond_predictor.pth) may already be available in models/.
+3️⃣ Backend Setup
+cd ../chemstruct_ai_backend
+
+# Create and activate virtual environment
+python3 -m venv venv_backend
+source venv_backend/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Ensure ML model file is in `models/` directory
+# Start Flask backend
+python app.py
+The backend will run at: http://localhost:5000
+4️⃣ Frontend Setup
+cd ../chemstruct_ai_frontend
+
+# Install Node dependencies
+npm install
+
+# Start the development server
+npm start
+The app will be live at: http://localhost:3000
+Make sure the Flask backend is running first.
+📂 Project Structure
+
+chemstruct_ai/
+├── chemstruct_ai_ml/           # GNN training & inference
+│   ├── models/
+│   ├── src/
+│   └── requirements.txt
+│
+├── chemstruct_ai_backend/      # Flask API
+│   ├── models/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── chemstruct_ai_frontend/     # React.js frontend
+│   ├── public/
+│   ├── src/
+│   └── package.json
+🧠 Future Enhancements
+
+🌐 Integrate PubChem API for live molecule validation and enrichment.
+💾 Add user accounts and history via Firebase or Supabase.
+🧪 Support full reaction simulations beyond single bond breaking.
+📱 Native mobile app with React Nativ
