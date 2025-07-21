@@ -1,6 +1,6 @@
 # 🚀 ChemStruct AI: Dynamic Molecular Visualization & Reaction Simulation
 
-> **Unlock the Dynamics of Molecules**  
+**Unlock the Dynamics of Molecules**  
 ChemStruct AI is a cutting-edge web application built to help students and researchers intuitively explore molecular structures and their dynamic reactivity. By integrating 3D rendering and Graph Neural Networks (GNN), ChemStruct AI transforms static chemical data into interactive animated simulations.
 
 ---
