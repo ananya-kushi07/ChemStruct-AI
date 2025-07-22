@@ -125,6 +125,8 @@ npm start
 ```
 The app will be live at: http://localhost:3000
 Make sure the Flask backend is running first.
+
+```
 📂 Project Structure
 
 chemstruct_ai/
@@ -143,6 +145,7 @@ chemstruct_ai/
 │   ├── src/
 │   └── package.json
 🧠 Future Enhancements
+```
 
 🌐 Integrate PubChem API for live molecule validation and enrichment.
 💾 Add user accounts and history via Firebase or Supabase.
